@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script src="variable.js"></script>
+    <p><div>/*
+        //if var is declared as a globel scope it can be escaped from the function scope
+        var v=1;                
+        function fun1(){        
+            v=2;                
+            console.log(v);
+        }
+        console.log(v);
+        fun1();
+        
+        if(true){
+            v=3;                
+            console.log(v);
+        }
+        console.log(v);
+    </div>
+    <div>
+        //if var is declared within the function scope, it will not escape from the function scope or curly braces
+        function varr()
+        {
+            var a=10;
+            console.log(a);
+        }
+        varr();
+                                        //but it can escape from the conditions and loops
+        if(true)
+        {
+            var b=20;
+            console.log(b);
+        }
+        console.log(b);
+        */
+    </div>
+    </p>
+</body>
+</html>

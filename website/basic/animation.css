@@ -1,0 +1,45 @@
+.btn{
+    margin-top: 200px;
+    margin-left: 300px;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: var(--clr-accent);
+    background-color: red;
+    border-radius: 5px;
+    border: 10px solid lightgreen;
+
+    transition-property:transform ;
+    transition-duration:0.3s ;
+    transition-timing-function:ease ;
+    transition-delay:0s ;
+
+}
+.btn:hover{
+    transform: translateY(-10px);
+    color: lightblue;
+    background-color: azure;
+}
+
+@keyframes slide 
+{
+    from{
+        transform:translateX(-300px);
+    }
+    to{
+        transform:translateX(0px);
+    }
+}
+
+.hding{
+    animation-name: slide;
+    animation-duration:2s ;
+    animation-delay:0s ;
+    animation-timing-function:ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-direction:normal ;/*reverse */
+    animation-fill-mode: none;
+
+
+}
+
